@@ -18,8 +18,8 @@ var run = function()
 		{
 			m = re.exec(els[x].innerHTML);
 			while (els[x].innerHTML.match(re)) {
-	    		els[x].innerHTML = els[x].innerHTML.replace(eval('/#{' + m[1] + '}/g'), eval(m[1]));
-	    		m = re.exec(els[x].innerHTML);
+		    		els[x].innerHTML = els[x].innerHTML.replace(eval('/#{' + m[1] + '}/g'), eval(m[1]));
+		    		m = re.exec(els[x].innerHTML);
 			}
 		}
 	}
